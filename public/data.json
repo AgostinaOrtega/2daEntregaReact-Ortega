@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "Community Manager",
+      "price": 40000,
+      "img": "https://nekocalf.cl/wp-content/uploads/2020/11/Community-Manager-300x300.png",
+      "quanty": 1
+ 
+    },
+    {
+      "id": 2,
+      "name": "Sitio Web",
+      "price": 50000,
+      "img": "https://nekocalf.cl/wp-content/uploads/2020/11/Community-Manager-300x300.png",
+      "quanty": 1
+  
+    },
+  
+    {
+      "id": 3,
+      "name": "Mantenimiento Mensual",
+      "price": 40000,
+      "img": "https://nekocalf.cl/wp-content/uploads/2020/11/Community-Manager-300x300.png",
+      "quanty": 1
+    }
+   
+  ]
