@@ -1,5 +1,4 @@
-import { createContext, useState } from "react";
-
+import React, { createContext, useState } from "react";
 
 export const dataContext = createContext();
 
@@ -7,16 +6,30 @@ const DataProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
 
   const buyProducts = (product) => {
-    const productrepeat = cart.find((item) => item.id === product.id);
+    const productRepeat = cart.find((item) => item.id === product.id);
 
-    if (productrepeat) {
-      setCart(cart.map((item) => (item.id === product.id ? { ...product, quanty: productrepeat.quanty + 1 } : item)));
+    if (productRepeat) {
+      setCart(
+        cart.map((item) => (item.id === product.id ? { ...product, quanty: productRepeat.quanty + 1 } : item))
+      );
     } else {
-      setCart([...cart, product]);
+      setCart([...cart, { ...product, quanty: 1 }]);
     }
   };
 
-  return <dataContext.Provider value={{ cart, setCart, buyProducts }}>{children}</dataContext.Provider>;
+  const removeFromCart = (productId) => {
+    setCart(cart.filter((item) => item.id !== productId));
+  };
+
+  const clearCart = () => {
+    setCart([]);
+  };
+
+  return (
+    <dataContext.Provider value={{ cart, setCart, buyProducts, removeFromCart, clearCart }}>
+      {children}
+    </dataContext.Provider>
+  );
 };
 
 export default DataProvider;
