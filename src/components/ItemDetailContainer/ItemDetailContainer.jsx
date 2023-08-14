@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 
 const ItemDetailContainer = ({ product, onAddToCart, onRemoveFromCart, onClearCart }) => {
@@ -36,7 +37,6 @@ const ItemDetailContainer = ({ product, onAddToCart, onRemoveFromCart, onClearCa
 };
 
 export default ItemDetailContainer;
-
 
 
 

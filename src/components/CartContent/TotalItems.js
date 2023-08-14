@@ -8,4 +8,4 @@ const TotalItems = () => {
   return <span className='cart-items-total'>{itemsQuanty}</span>;
 };
 
-export default TotalItems;
+export default TotalItems; 

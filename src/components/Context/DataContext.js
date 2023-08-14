@@ -10,10 +10,10 @@ const DataProvider = ({ children }) => {
 
     if (productRepeat) {
       setCart(
-        cart.map((item) => (item.id === product.id ? { ...product, quanty: productRepeat.quanty + 1 } : item))
+        cart.map((item) => (item.id === product.id ? { ...product, quantity: productRepeat.quantity + 1 } : item))
       );
     } else {
-      setCart([...cart, { ...product, quanty: 1 }]);
+      setCart([...cart, { ...product, quantity: 1 }]);
     }
   };
 

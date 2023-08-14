@@ -15,9 +15,9 @@ const Navbar = () => {
         </Link>
 
 
-          {/* Agregar enlace para "Contactos" */}
-          <Link to={"/contact"} className="nav-link">
-          Contactos
+          {/* Agregar enlace para "Servicios" */}
+          <Link to={"Servicios"} className="nav-link">
+          Servicios
         </Link>
 
         {/* Agregar enlace para "Nosotros" */}

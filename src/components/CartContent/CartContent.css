@@ -42,3 +42,29 @@
     right: 14px;
     position: absolute;
   }
+
+  .cart-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .finalize-button-container {
+    margin-top: 20px;
+  }
+  
+  .finalize-button {
+    background-color: #ff9900;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .finalize-button:hover {
+    background-color: #e68900;
+  }
+  

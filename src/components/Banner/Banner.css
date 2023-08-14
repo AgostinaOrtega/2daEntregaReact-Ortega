@@ -1,13 +1,13 @@
 .banner {
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 50vh;
   background-color: #243b64 ;
 }
   
   .banner-container {
     text-align: center;
-    padding: 15% 0;
+    padding: 6% 0;
   }
   
   .banner h1 {
